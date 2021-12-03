@@ -1,0 +1,415 @@
+*{
+    margin: 0 ;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.nav{
+padding: 10px;
+background-color: rgba(40,48,52);
+z-index: 6;
+position: fixed;
+width: 100%;
+}
+
+.nav .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 60px;
+    color: #fff;
+}
+
+.nav .judul{
+font-size: 1.5em;
+font-family: 'Poppins', sans-serif;
+letter-spacing: 1px;
+}
+
+.nav .navbar ul li{
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.nav .navbar ul li a{
+    display: inline-block;
+   color: #fff;
+   text-decoration: none;
+   padding: 10px;
+   border-radius: 7px;
+   transition: 0.5s ease all;
+   font-family: 'Roboto Condensed', sans-serif;
+}
+
+.nav .navbar ul li a:hover{
+    background-color: red;
+}
+
+.gambar{
+    background-image: url(../gambar/background.png);
+    height: 120vh;
+    width: 100%;
+    background-size: cover;
+}
+
+.gambar .container{
+    display: flex;
+    width: 40%;
+    height: 100vh;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 40px;
+    color: #ffff;
+}
+
+.gambar .container h1{
+    font-size: 3em;
+    font-family: 'Poppins', sans-serif;
+}
+
+.gambar .container h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+}
+.gambar .container p{
+    font-size: 0.9em;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.gambar .container a{
+    border: 7px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.btn-clik{
+    display: none;
+}
+
+.gambar .container a{
+    background-color: rgba(40,48,52);
+    margin: 10px 0;
+    padding: 5px 45px;
+    border-radius: 7px;
+    text-decoration: none;
+    color: #ffff;
+    width: 15%;
+    text-align: center;
+    margin: 20px auto;
+ }
+
+ .clik{
+    position: fixed;
+    right: 40px;
+}
+
+.clik a{
+    color: #fff;
+    font-size: 1.3em;
+}
+
+.service{
+    margin: 50px 0;
+}
+.service .container{
+    width: 90%;
+    margin: 0 auto;
+}
+.service .judul h1{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin: 30px 0;
+}
+
+.service .container .box{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.service .container .box .col-4{
+    width: 23%;
+    border: 1px solid #eaea;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.service .container .box .col-4 .icon{
+    background-color: rgba(40,48,52);
+    padding: 30px 0;
+    font-size: 4em;
+    color: #fff;
+}
+
+.service .container .box .col-4 h3{
+    font-family: 'Roboto', sans-serif;
+    margin: 10px 0;
+}
+
+.service .container .box .col-4 p{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 600;
+    font-size: 0.9em;
+    text-align: justify;
+    margin: 0 0 20px 0;
+}
+
+.service .container .box .col-4 a{
+    text-decoration: none;
+    background-color: rgba(40,48,52);
+    color: #fff;
+    border-radius: 8px;
+    padding: 6px 30px;
+    border: 2px solid rgba(40,48,52);
+    transition: 1s ease all;
+    margin: 0 0 10px 0;
+    display: block;
+    width: 30%;
+    margin: 0 auto;
+}
+
+.service .container .box .col-4 a:hover{
+    background: none;
+    color: rgba(40,48,52);
+}
+
+.contak{
+    margin: 50px 0;
+}
+
+.contak .judul{
+    text-align: center;
+    background-color: rgba(40,48,52);
+    padding: 10px;
+    margin: 0 0 20px;
+}
+
+.contak .judul h1{
+    color: #ffff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contak .container{
+background-color:rgba(40,48,52);
+padding: 20px;
+}
+
+.contak .container .box{
+    display: flex;
+    justify-content: space-evenly;
+    color: #fff;
+}
+
+.contak .container .box ul li{
+font-size: 1.5em;
+line-height: 65px;
+list-style: none;
+font-family: 'Roboto Condensed', sans-serif;
+}
+
+.alamat{
+    margin: 50px 0;
+}
+
+.alamat .judul{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin: 30px 0;
+}
+
+.alamat .container {
+    margin: 0 auto;
+    width: 90%;
+}
+
+.alamat .container .box{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.alamat .container .box .col-2 label{
+    display: block;
+}
+
+.alamat .container .box .kanan{
+    margin: 80px 0;
+}
+
+input[type="username"],
+input[type="email"],
+textarea[id="textarea"]{
+    border: none;
+    outline: none;
+    border: 1px solid rgba(40,48,52,.4);
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+label[for="textarea"],
+label[for="email"],
+label[for="username"]{
+    text-align: center;
+    margin: 20px 0 5px 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+
+input[type="username"],
+input[type="email"]{
+    width: 300px;
+    height: 20px;
+    padding: 5px 10px;
+}
+
+textarea[id="textarea"]{
+    width: 300px;
+    height: 50px;
+    padding: 5px 10px;
+}
+
+.alamat .container .box a{
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    background-color: rgba(40,48,52);
+    color: #ffff;
+    padding: 5px 0 ;
+    border-radius: 10px;
+    margin: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+
+
+/* media ukuran 800px */
+
+@media screen and (max-width: 800px){
+ .nav .container ul li{
+     display: flex;
+     flex-wrap: wrap;
+ }
+
+.judul {
+     margin: 0 auto;
+ }
+
+ .btn-clik{
+     display: block;
+ }
+
+
+.navbar{
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
+background-color:rgba(40,48,52);
+position: absolute;
+height: 90vh;
+margin-top: 60px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 1.2em;
+line-height: 80px;
+margin-left: -110%;
+width: 100%;
+transition: 1s ease all;
+}
+
+.navbar.navbarr{
+    margin-left: 0;
+}
+
+.gambar .container{
+    width: 70%;
+    font-size: 0.8em;
+}
+
+.service .container .box {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.service .container .box .col-4{
+    width: 45%;
+    margin: 10px 0;
+}
+
+.alamat .container .box{
+    display: flex;
+}
+
+.alamat .container .box .col-2{
+    width: 90%;
+}
+
+.alamat .container .box .map{
+    width: 350px;
+    height: 350px;
+}
+
+.alamat .container .box .kanan{
+    margin: -20px 20px;
+}
+
+
+}
+
+/* akhir media ukuran 800px */
+
+
+@media screen and (max-width: 600px){
+    .gambar .container{
+        width: 90%;
+        margin: 0 auto;
+        font-size: 0.7em;
+    }
+
+    .service .container .box {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .service .container .box .col-4{
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .contak .container .box{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .contak .container .box .col-2{
+        width: 70%;
+        margin: 0 auto;
+
+    }
+
+    .contak .container .box .right{
+        order: 1;
+    }
+
+    .contak .container .box .left{
+        order: 2;
+    }
+
+
+    .alamat .container .box{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .alamat .container .box .col-2{
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .alamat .container .box a{
+        margin: 20px auto;
+        width: 30%;
+    }
+
+
+}
